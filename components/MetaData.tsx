@@ -15,16 +15,22 @@ export const MetaData: FC<Partial<metaprops>> = function MetaData({
     featureimg = "images/nirus_large.png",
     url = "http://nirus.io",
     tags = ['coding', 'programming', 'brilliant'],
+    title="NiRUS"
 }) {
 
     return (
         <>
+            <meta name="robots" content="INDEX,FOLLOW"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+            <meta name="keywords" content="Nirus, NiRUS, N1RUS, programming, coding, hacking, tutorials, algorithm, time space, ai, blockchain, quantum computer"/>
+            <meta name="description" content="Nirus | Meta thinker & doer"/>
+
             <meta property="og:locale" content="en_US" />
             <meta property="og:type" content="article" />
-            <meta property="og:title" content="Nirus - Mind & Muscle" />
+            <meta property="og:title" content="Nirus - Meta thinker & doer" />
             <meta property="og:description" content={description} />
             <meta property="og:url" content={url} />
-            <meta property="og:site_name" content="Nirus - Mind & Muscle" />
+            <meta property="og:site_name" content="Nirus - Meta thinker & doer" />
 
             <meta property="article:publisher" content={facebook} />
             {tags.map((tag, index) => (<meta key={index} property="article:tag" content={tag} />))}
@@ -35,7 +41,8 @@ export const MetaData: FC<Partial<metaprops>> = function MetaData({
             <meta property="og:image:height" content="405" />
             <meta property="og:image:alt" content="Nirus Avatar" />
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:description" content={description} />            
+            <meta name="twitter:description" content={description} />
+            <title>{title}</title>
         </>
     );
 };
