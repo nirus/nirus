@@ -1,0 +1,131 @@
+.container {
+  max-width: 500px;
+  min-width: 300px;
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  perspective: 1000px;
+  padding: 1rem 1rem;
+  flex-direction: column;
+  
+  .name {
+    color: #313f47;
+    text-transform: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.95em;
+    letter-spacing: 0.15em;
+    margin: 0;
+  }
+
+  &:hover {
+    .biocard {
+      transform: rotateY(180deg);
+      .header {
+        transform: rotateY(180deg);
+      }    
+    }
+
+    .icons{
+      transition: opacity 500ms ease-in;
+      li a{
+        border: 0.5px dashed rgb(214, 214, 214);
+      }
+    }
+
+    .aboutNiranjan {
+      visibility: visible;
+      opacity: 1;
+      transition: visibility 0s linear 0s, opacity 2000ms;
+    }
+
+    .aboutNirus {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+
+  .about {
+    position: relative;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    letter-spacing: 0.2em;
+    p {
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      margin: 0px;
+    }
+
+    h5 {
+      margin: 10px 0px 15px 0px;      
+      font-size: 1rem;
+      letter-spacing: 0.16rem;
+      
+    }
+  }
+
+  .aboutNirus {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0s linear 0s, opacity 2000ms;
+    top: 0;
+  }
+
+  .aboutNiranjan {
+    transform: rotateY(180deg);
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+  }
+
+  .ganesh{
+    padding-bottom: 3px;
+    border-bottom: 1px dashed rgb(19, 18, 18);
+    cursor: help;
+  }
+
+  .icons {
+    align-items: center;    
+    text-align: center;
+    margin: auto;
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+    color: white;
+    li {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      a {
+        text-decoration: none;
+				position: relative;
+				display: block;
+        width: 4rem;
+        height: 4rem;
+				border-radius: 100%;
+				border: solid 1px transparent;
+        font-size: 2rem;
+        line-height: 3.8rem;
+				text-align: center;				
+				white-space: nowrap;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          transition: all 0.2s ease-in-out;
+          box-shadow: rgba(0, 0, 0, 0.75) -3px 6px 9px -3px;
+          -webkit-box-shadow: -3px 6px 9px -3px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: -3px 6px 9px -3px rgba(0, 0, 0, 0.75);
+          border-style: solid;
+        }
+      }
+    }
+
+  }
+  
+  header, footer{
+    margin: auto;
+  }
+}

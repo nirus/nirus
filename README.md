@@ -1,16 +1,15 @@
-### Hi there 👋
+# nirus.org
 
-<!--
-**nirus/nirus** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## About
+This is Next.js project that is generates the static portal site for [nirus.org](https://nirus.org) usinf SSG method.
 
-Here are some ideas to get you started:
+### Steps to run the project:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+ - Checkout the code on your local system
+ - Create the changes to the repo
+ - Branch out the code change & raise a PR to `master`
+ - Approve the PR merge
+ - Github actions should kick in and build the code and upload
+
+### Repository flow
+Fully automated by GitHub actions to host the 

@@ -1,0 +1,61 @@
+.biocard {
+  box-shadow: 0px 16px 33px -3px rgb(0 0 0 / 75%);
+  width: 100%;
+  margin: auto;
+  transition: transform 1s ease;
+  padding: 3rem 1rem;
+  background: white;
+  border-radius: 4px;
+  cursor: default;
+  opacity: 0.95;
+  position: relative;
+  text-align: center;
+  z-index: 999;
+  .header {
+    width: 100%;
+    height: auto;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    visibility: visible;
+  }
+
+  .avatar {
+    width: 100%;
+    backface-visibility: hidden;
+    perspective: 0;
+    transform: translate3d(0, 0, 0);
+    position: relative;
+    display: block;
+    margin-bottom: 1.5em;
+
+    img {
+      width: 56%;
+      background: white;
+      border-radius: 50%;
+      border: 1px #dedede solid;
+      padding: 6px;
+    }
+  }
+
+  %common-avatar {
+    backface-visibility: hidden;
+    perspective: 0;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .niranjan {
+    @extend %common-avatar;
+    top: 0px;
+    position: absolute;
+    transform: rotateY(180deg);
+    img {
+      transform: rotateY(180deg);
+    }
+  }
+
+  .nirus {
+    @extend %common-avatar;
+  }
+
+}
