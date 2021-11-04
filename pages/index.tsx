@@ -14,7 +14,8 @@ const Home: NextPage<Props> = ( props ) => {
       <Head>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet" />
-        <link href="images/niranjan.jpg" rel="preload" as="image" />
+        <link href="images/niranjan.jpg" rel="preload" as="image" />     
+        <title>NiRUS</title>   
         <MetaData />
       </Head>
       <main className={home.container}>
