@@ -30,13 +30,14 @@ jobs:
       - run: |
           npm i
           npm run build
+          echo "www.nirus.org" >> ./out/CNAME
           
       - name: Next Pages
         # You may pin to the exact commit or the version.
         # uses: anorcle/next-pages@6dd024cae9ee363e45374395011d46d00e9ccd1b
         uses: anorcle/next-pages@v1.0
       - name: Commit and push changes
-        run: |
+        run: |          
           git config --global user.name "nirus"
           git config --global user.email "nirus@live.in"
           git add -A
