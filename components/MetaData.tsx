@@ -15,7 +15,6 @@ export const MetaData: FC<Partial<metaprops>> = function MetaData({
     featureimg = "images/nirus_large.png",
     url = "http://nirus.io",
     tags = ['coding', 'programming', 'brilliant'],
-    title="NiRUS"
 }) {
 
     return (
@@ -36,8 +35,7 @@ export const MetaData: FC<Partial<metaprops>> = function MetaData({
             <meta property="og:image:height" content="405" />
             <meta property="og:image:alt" content="Nirus Avatar" />
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:description" content={description} />
-            <title>{title}</title>
+            <meta name="twitter:description" content={description} />            
         </>
     );
 };
