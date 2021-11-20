@@ -6,16 +6,29 @@ import home from '@styles/home.module.scss';
 import BioLinks, { BioProps } from '@components/BioLinks';
 
 type Bio = { about: string; title1: string; title2: string };
-type Props = { header: BioProps["bioInfo"], footer: BioProps["bioInfo"], bio: {niranjan: Partial<Bio>; nirus: Partial<Bio>} };
+type Props = { header: BioProps["bioInfo"], footer: BioProps["bioInfo"], bio: { niranjan: Partial<Bio>; nirus: Partial<Bio> } };
 
-const Home: NextPage<Props> = ( props ) => {
+const Home: NextPage<Props> = (props) => {
   return (
     <>
       <Head>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DMKKYQ9YDK"></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-DMKKYQ9YDK');          
+          `
+        }}>
+        </script>
+
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet" />
-        <link href="images/niranjan.jpg" rel="preload" as="image" />     
-        <title>NiRUS</title>   
+        <link href="images/niranjan.jpg" rel="preload" as="image" />
+        <title>NiRUS</title>
         <MetaData />
       </Head>
       <main className={home.container}>
