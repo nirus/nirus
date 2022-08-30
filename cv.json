@@ -6,7 +6,7 @@
             "title": "chat with nirus on telegram"
         },
         {
-            "link": "mailto:nirus@engineer.com",
+            "link": "mailto:nirus@live.in",
             "icon": "icon-mail",
             "title": "wrire an email to nirus"
         },
@@ -35,13 +35,13 @@
     ],
     "bio": {
         "nirus": {
-            "about": "Passion for coding & technology",
+            "about": "Meta thinker & doer",
             "title2": "ΩiRU$ | nirus | N1RUS",
             "title1": "NiRUS"
         },
         "niranjan": {
             "title1": "Niranjan Kumar",
-            "title2": "meta thinker & doer"
+            "title2": "mind + muscle + soul"
         }
     }
 }
