@@ -13,3 +13,8 @@
 <span style="text-decoration:underline">[ Blogs articles & knowledge ledger ]</span>
  - [Coder Rocks](https://coder.rocks)
  - [Medium.com](https://nirus.medium.com)
+
+<span style="text-decoration:underline">[ List of Organizations ]</span>
+ - [HelloFresh](https://github.com/niranjan-hf)
+ - [Condé Nast](https://github.com/niranjan-cn)
+ - [EY](https://github.com/niranjan-ey)
